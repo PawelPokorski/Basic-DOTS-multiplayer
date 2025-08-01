@@ -20,7 +20,6 @@ public partial struct PlayerJumpSystem : ISystem
 
             if(playerInput.JumpEvent.IsSet && transform.ValueRO.Position.y <= 0.01f)
             {
-                Debug.Log("Jump");
                 physics.ValueRW.Linear += new float3(0f, _jumpForce * mass.ValueRW.InverseMass, 0f);
             }
         }
