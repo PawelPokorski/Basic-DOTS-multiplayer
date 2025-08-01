@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class PlayerSpawnerAuthoring : MonoBehaviour
 {
-    public GameObject EvenPlayerPrefab; // dla parzystych NetworkId
-    public GameObject OddPlayerPrefab;  // dla nieparzystych NetworkId
+    public GameObject EvenPlayerPrefab;
+    public GameObject OddPlayerPrefab;
 
     class Baker : Baker<PlayerSpawnerAuthoring>
     {
